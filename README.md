@@ -5,7 +5,7 @@
 Hey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfortable with fucking Oracle DB and NodeJs.
 
 
-> **Note:**https://github.com/nhuanhoangduc/cu8-sequelize-oracle/issues
+> **Note:**
 > - Fix old functions and add more features to sequelize-oracle
 > - Forked repository: [Sequelize-oracle](https://github.com/adeo-proxideco/sequelize-oracle)
 

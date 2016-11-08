@@ -1,7 +1,7 @@
 {
   "name": "cu8-sequelize-oracle",
   "description": "Multi dialect ORM for Node.JS/io.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Nhuan"
   },
@@ -74,11 +74,9 @@
     "node": ">=0.6.21"
   },
   "license": "MIT",
-  "readme": "**Cu8-sequelize-oracle**\n===================\n\n\nHey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfortable with fucking Oracle DB and NodeJs.\n\n\n> **Note:**\n> - Fix old functions and add more features to sequelize-oracle\n> - Forked repository: [Sequelize-oracle](https://github.com/adeo-proxideco/sequelize-oracle)\n\n\n***_Change logs_***\n\n - 0.0.4 Add destroy function for deleting objects\n - 0.0.5 Add $regexp_like comparator. $regexp_like: 'string'\n - 0.0.6 Add TEXT (CLOB) type\n - 0.0.7 Add Sequelize.getCLOB, Sequelize.insertCLOB, Sequelize.updateCLOB\n   - Sequelize.prototype.getCLOB = function(results, ClobFields, done)\n    ```javascript\n        model.findAll({\n          maxRows: 99999\n        }).then(function(results) {\n\n          Sequelize.getCLOB(results, ['Field1_type_clob', 'Field2_type_clob'], function(err, list) {\n            console.log(err);\n            console.log(list);\n          });\n\n        }).catch(next);\n    ```\n    - Sequelize.prototype.updateCLOB = function(model, data, search, ClobFields, done)\n    ```javascript\n    Sequelize.updateCLOB(model, req.body, {ID: req.body.ID}, ['Field1_type_clob', 'Field2_type_clob'], function (err) {\n      if (err)\n        return next(err);\n      res.sendStatus(200);\n    });\n    ```\n    - Sequelize.prototype.insertCLOB = function(model, data, primaryKey, ClobFields, done)\n    ```javascript\n    Sequelize\n      .insertCLOB(model, req.body, 'ID', ['Field1_type_clob', 'Field2_type_clob'], function (err, result) {\n          res.send(result);\n        });\n    ```\n",
   "readmeFilename": "README.md",
   "gitHead": "83826c49ea7a680ea606a6fe191bab02522d77aa",
   "homepage": "https://github.com/nhuanhoangduc/cu8-sequelize-oracle#readme",
-  "_id": "cu8-sequelize-oracle@0.1.0",
   "_shasum": "7f17f4705394b3136c54c0d33a50428862c89205",
   "_from": "cu8-sequelize-oracle@*"
 }
