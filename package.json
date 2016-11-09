@@ -1,7 +1,7 @@
 {
   "name": "cu8-sequelize-oracle",
   "description": "Multi dialect ORM for Node.JS/io.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Nhuan"
   },
