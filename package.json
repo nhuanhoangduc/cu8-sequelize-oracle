@@ -1,7 +1,7 @@
 {
   "name": "cu8-sequelize-oracle",
   "description": "Multi dialect ORM for Node.JS/io.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Nhuan"
   },
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bluebird": "~2.9.24",
+    "deasync": "^0.1.9",
     "depd": "^1.0.1",
     "dottie": "^0.3.1",
     "generic-pool": "2.2.0",

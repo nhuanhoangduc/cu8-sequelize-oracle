@@ -1,6 +1,8 @@
 **Cu8-sequelize-oracle**
 ===================
 
+3===> New Feature - CLOB auto loading 
+=======
 
 Hey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfortable with fucking Oracle DB and NodeJs.
 
@@ -13,6 +15,7 @@ Hey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfor
 ***_Change logs_***
 
  - 0.0.4 Add destroy function for deleting objects
+ 
      ```javascript
         model
             .destroy({where: {ID: 123}})
@@ -38,14 +41,6 @@ Hey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfor
         });
     ```
  - 1.0.0 
-   - Get CLOB data
-       ```javascript
-          model.findAll({
-            clobAttributes: ['Field1_type_clob', 'Field2_type_clob']
-          }).then(function(results) {
-            res.json(results);
-          }).catch(next);
-      ```
    - Connection pool (Setup in ./lib/dialects/abstract/connection-manager.js at line 79) :
       ```javascript
           connectionConfig.poolMax = 20;
