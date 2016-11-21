@@ -48,6 +48,7 @@ Hey! I'm Nhua Nhua, who came from Mars. Wish you have a nice day and feel comfor
           connectionConfig.poolTimeout = 69;
           connectionConfig.queueRequests = true;
       ```
+ - 1.0.5 Fix join model cannot load CLOB
 
 **DataType: only this dataTypes are managed:**
 
